@@ -8,7 +8,9 @@
     <header class="main-header">
       <div class="container">
         <div class="logo">
-          <img src="http://placehold.it/150x100" alt="Barbershop">
+          <a href="#">
+            <img src="http://placehold.it/150x100" alt="Barbershop">
+          </a>
         </div>
         <nav class="main-menu">
           <ul>
@@ -22,7 +24,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a class="active" href="#">Магазин</a>
+              <a class="active">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -41,6 +43,35 @@
         <a href="#">Магазин</a>
         <a class="active" href="#">Средства для ухода</a>
       </div>
+      <section class=filter>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter-brand">
+            <legend>Производители:</legend>
+            <input type="checkbox" name="brand" id="Baxter-of-California" checked>
+            <label for="Baxter-of-California">Baxter of California</label>
+            <input type="checkbox" name="brand" id="Mr-Natty">
+            <label for="Mr-Natty">Mr Natty</label>
+            <input type="checkbox" name="brand" id="Suavecito" checked>
+            <label for="Suavecito">Suavecito</label>
+            <input type="checkbox" name="malin" id="Malin-Goetz">
+            <label for="Malin-Goetz">Malin+Goetz</label>
+            <input type="checkbox" name="brand" id="murray's">
+            <label for="murray's">Murray's</label>
+            <input type="checkbox" name="brand" id="american-crew" checked>
+            <label for="american-crew">American crew</label>
+          </fieldset>
+          <fieldset class="filter-groups">
+            <legend>Группы товаров:</legend>
+              <input type="radio" name="group" id="for-shaving" value="for-shaving">
+              <label for="for-shaving">Бритвенные принадлежности</label>
+              <input type="radio" name="group" id="for-care" value="for-care" checked>
+              <label for="for-care">Средства для ухода</label>
+              <input type="radio" name="group" id="accessories" value="accessories">
+              <label for="accessories">Аксессуары</label>
+          </fieldset>
+          <button class="filter-btn" type="submit">Показать</button>
+        </form>
+      </section>
       <section class="catalog">
         <article class="catalog-item">
           <a class="item-image" href="#">
@@ -52,8 +83,10 @@
               <span>&laquo;Baxter of California&raquo;</span>
             </h2>
           </a>
-          <span class="item-price">2900 руб.</span>
-          <button class="btn-sale" type="button">Купить</button>
+          <div class="price">
+            <span class="price-value">2900 руб.</span>
+            <a class="btn sale" href="#">Купить</a>
+          </div>
         </article>
         <article class="catalog-item">
           <a class="item-image" href="#">
@@ -65,8 +98,10 @@
               <span>&laquo;Baxter of California&raquo;</span>
             </h2>
           </a>
-          <span class="item-price">750 руб.</span>
-          <button class="btn-sale" type="button">Купить</button>
+          <div class="price">
+            <span class="price-value">750 руб.</span>
+            <a class="btn sale" href="#">Купить</a>
+          </div>
         </article>
         <article class="catalog-item">
           <a class="item-image" href="#">
@@ -78,8 +113,10 @@
               <span>&laquo;Suavecito&raquo;</span>
             </h2>
           </a>
-          <span class="item-price">290 руб.</span>
-          <button class="btn-sale" type="button">Купить</button>
+          <div class="price">
+            <span class="price-value">290 руб.</span>
+            <a class="btn sale" href="#">Купить</a>
+          </div>
         </article>
         <article class="catalog-item">
           <a class="item-image" href="#">
@@ -91,8 +128,10 @@
               <span>&laquo;American crew&raquo;</span>
             </h2>
           </a>
-          <span class="item-price">500 руб.</span>
-          <button class="btn-sale" type="button">Купить</button>
+          <div class="price">
+            <span class="price-value">500 руб.</span>
+            <a class="btn sale" href="#">Купить</a>
+          </div>
         </article>
         <article class="catalog-item">
           <a class="item-image" href="#">
@@ -104,8 +143,10 @@
               <span>&laquo;American crew&raquo;</span>
             </h2>
           </a>
-          <span class="item-price">300 руб.</span>
-          <button class="btn-sale" type="button">Купить</button>
+          <div class="price">
+            <span class="price-value">300 руб.</span>
+            <a class="btn sale" href="#">Купить</a>
+          </div>
         </article>
         <article class="catalog-item">
           <a class="item-image" href="#">
@@ -117,48 +158,15 @@
               <span>&laquo;Baxter of California&raquo;</span>
             </h2>
           </a>
-          <span class="item-price">3900 руб.</span>
-          <button class="btn-sale" type="button">Купить</button>
+          <div class="price">
+            <span class="price-value">3900 руб.</span>
+            <a class="btn sale" href="#">Купить</a>
+          </div>
         </article>
-      </section>
-      <section class=filter>
-        <form action="#" method="get">
-          <fieldset class="filter-brand">
-            <legend>Производители:</legend>
-            <input type="checkbox" name="california" id="california" checked>
-            <label for="california">Baxter of California</label>
-            <input type="checkbox" name="natty" id="natty">
-            <label for="natty">Mr Natty</label>
-            <input type="checkbox" name="suavecito" id="suavecito" checked>
-            <label for="suavecito">Suavecito</label>
-            <input type="checkbox" name="malin" id="malin">
-            <label for="malin">Malin+Goetz</label>
-            <input type="checkbox" name="murray's" id="murray's">
-            <label for="murray's">Murray's</label>
-            <input type="checkbox" name="american-crew" id="american-crew" checked>
-            <label for="american-crew">American crew</label>
-          </fieldset>
-          <fieldset class="filter-groups">
-            <legend>Группы товаров:</legend>
-            <label>
-              <input type="radio" name="group" value="for-shaving">
-                Бритвенные принадлежности
-            </label>
-            <label>
-              <input type="radio" name="group" value="for-care" checked>
-                Средства для ухода
-            </label>
-            <label>
-              <input type="radio" name="group" value="accessories">
-                Аксессуары
-            </label>
-          </fieldset>
-          <button class="filter-btn" type="submit">Показать</button>
-        </form>
       </section>
       <div class="paginator">
         <a href="#">1</a>
-        <a class="active" href="#">2</a>
+        <a class="active">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
       </div>
