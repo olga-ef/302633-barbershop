@@ -1,0 +1,90 @@
+
+.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--icon-login {
+    width: 18px;
+    height: 16px;
+    background-position: -10px -10px;
+}
+
+.sprite--icon-login_hover {
+    width: 18px;
+    height: 16px;
+    background-position: -10px -46px;
+}
+
+.sprite-Locked-2 {
+    width: 15px;
+    height: 17px;
+    background-position: -10px -82px;
+}
+
+.sprite-Shape-2 {
+    width: 8px;
+    height: 8px;
+    background-position: -10px -119px;
+}
+
+.sprite-Shape_block {
+    width: 8px;
+    height: 8px;
+    background-position: -10px -147px;
+}
+
+.sprite-User {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -175px;
+}
+
+.sprite-cross {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -210px;
+}
+
+.sprite-cross_block {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -242px;
+}
+
+.sprite-f-white {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -274px;
+}
+
+.sprite-f_black {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -316px;
+}
+
+.sprite-i-white {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -358px;
+}
+
+.sprite-i_black {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -399px;
+}
+
+.sprite-v-white {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -440px;
+}
+
+.sprite-v_black {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -476px;
+}
